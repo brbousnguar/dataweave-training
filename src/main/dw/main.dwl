@@ -1,4 +1,10 @@
 %dw 2.0
 output application/json
+
 ---
-payload.*number
+payload.action match {
+    case "buy" -> "Buy at market price"
+    case "sell" -> "Sell at market price"
+    case "hold" -> "Hold position"
+    else -> "Unknown action"
+}
