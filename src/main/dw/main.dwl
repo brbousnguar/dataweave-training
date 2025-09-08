@@ -2,9 +2,4 @@
 output application/json
 
 ---
-payload.action match {
-    case "buy" -> "Buy at market price"
-    case "sell" -> "Sell at market price"
-    case "hold" -> "Hold position"
-    else -> "Unknown action"
-}
+((n,m) -> n + m)(1,2)

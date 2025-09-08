@@ -1,5 +1,6 @@
 %dw 2.0
 output application/json
 
+var add = (n, m) -> n + m
 ---
-((n,m) -> n + m)(1,2)
+add(1,2)
