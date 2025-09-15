@@ -5,7 +5,7 @@ var objExample = {
     key2: "value2",
     key2: "value2.1", // note this key is repeated (key2)
     key3: {
-        "key3.1": "value3.1",
+        "key3.1": "value3.1 ",
         "key3.2": {
             "key3.1": "value3.2"
         }
